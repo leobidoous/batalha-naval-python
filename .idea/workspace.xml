@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ae1e6493-a7c2-411e-9244-7da6a482cb9f" name="Default Changelist" comment="" />
+    <list default="true" id="ae1e6493-a7c2-411e-9244-7da6a482cb9f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/config_init_game_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/config_init_game_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/config_init_game_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/config_init_game_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/view.py" beforeDir="false" afterPath="$PROJECT_DIR$/view/view.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,14 +35,14 @@
           <entry key="ipynb" value="2" />
           <entry key="kv" value="10" />
           <entry key="py" value="18" />
-          <entry key="txt" value="3" />
+          <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IPNB" value="2" />
           <entry key="Kivy" value="10" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Python" value="18" />
         </counts>
       </usages-collector>
@@ -44,7 +50,7 @@
         <counts>
           <entry key="dummy" value="10" />
           <entry key="kv" value="1958" />
-          <entry key="py" value="12399" />
+          <entry key="py" value="12697" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -52,35 +58,44 @@
         <counts>
           <entry key="Kivy" value="1958" />
           <entry key="PLAIN_TEXT" value="11" />
-          <entry key="Python" value="12399" />
+          <entry key="Python" value="12697" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view/view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="93" selection-start-line="93" selection-end-line="93" />
+            <state relative-caret-position="166">
+              <caret line="103" column="16" lean-forward="true" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1541025892898" expanded="true" signature="708:713" ph="..." />
+                <marker date="1541033269679" expanded="true" signature="605:610" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/*.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="42" column="57" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="42" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/config_init_game_controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+            <state relative-caret-position="348">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
-                <marker date="1541025600911" expanded="true" signature="77:82" ph="..." />
-                <marker date="1541025600911" expanded="true" signature="755:760" ph="..." />
-                <marker date="1541025600911" expanded="true" signature="981:986" ph="..." />
+                <marker date="1541027251631" expanded="true" signature="77:82" ph="..." />
+                <marker date="1541027251631" expanded="true" signature="755:760" ph="..." />
+                <marker date="1541027251631" expanded="true" signature="981:986" ph="..." />
               </folding>
             </state>
           </provider>
@@ -89,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/config_init_game_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+            <state relative-caret-position="110">
+              <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -106,6 +121,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -126,8 +144,8 @@
         <option value="$PROJECT_DIR$/config_init_game.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/*.txt" />
-        <option value="$PROJECT_DIR$/model/config_init_game_model.py" />
         <option value="$PROJECT_DIR$/controller/config_init_game_controller.py" />
+        <option value="$PROJECT_DIR$/model/config_init_game_model.py" />
         <option value="$PROJECT_DIR$/view/view.py" />
       </list>
     </option>
@@ -138,6 +156,7 @@
     <option name="width" value="1291" />
     <option name="height" value="696" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -338,7 +357,7 @@
       <window_info id="DB Browser" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22311397" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22186495" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967898" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -379,13 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/*.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1176">
-          <caret line="84" column="36" selection-start-line="84" selection-start-column="36" selection-end-line="84" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -393,35 +405,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/*.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="42" column="57" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="42" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/model/config_init_game_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="80" column="8" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="8" />
+        <state relative-caret-position="110">
+          <caret line="63" column="39" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view/view.py">
+    <entry file="file://$PROJECT_DIR$/controller/config_init_game_controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        <state relative-caret-position="348">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <marker date="1541025892898" expanded="true" signature="708:713" ph="..." />
+            <marker date="1541027251631" expanded="true" signature="77:82" ph="..." />
+            <marker date="1541027251631" expanded="true" signature="755:760" ph="..." />
+            <marker date="1541027251631" expanded="true" signature="981:986" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/config_init_game_controller.py">
+    <entry file="file://$PROJECT_DIR$/view/view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        <state relative-caret-position="166">
+          <caret line="103" column="16" lean-forward="true" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
           <folding>
-            <marker date="1541025600911" expanded="true" signature="77:82" ph="..." />
-            <marker date="1541025600911" expanded="true" signature="755:760" ph="..." />
-            <marker date="1541025600911" expanded="true" signature="981:986" ph="..." />
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1541033269679" expanded="true" signature="605:610" ph="..." />
           </folding>
         </state>
       </provider>

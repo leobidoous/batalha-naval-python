@@ -61,7 +61,7 @@ class PlayerThread(threading.Thread):
 class AcceptConnectionsModel(threading.Thread):
     def __init__(self):
         threading.Thread.__init__(self)
-        self.LOCALHOST = "127.0.0.1"
+        self.LOCALHOST = "192.168.15.5"
         self.PORT = 8088
         self.server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -76,14 +76,16 @@ class AcceptConnectionsModel(threading.Thread):
         _newthread = PlayerThread(_clientAddress, _clientsock)
         _newthread.daemon = True
         _newthread.start()
+        _newthread.join()
 
 class RequestConnectionsModel():
     def __init__(self):
-        self.SERVER = "127.0.0.1"
+        self.SERVER = "192.168.15.5"
         self.PORT = 8088
         self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
     def run(self):
         self.client.connect((self.SERVER, self.PORT))
-        time.sleep(1)
+
+    def close(self):
         self.client.close()

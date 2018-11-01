@@ -37,3 +37,6 @@ class RequestConnectionsController():
 
     def request(self):
         self._request.run()
+
+    def close(self):
+        self._request.close()

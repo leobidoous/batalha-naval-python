@@ -2,8 +2,6 @@ import os
 
 from controller.config_init_game_controller import *
 
-# se alterar a altura e a largura, tem que recalcular
-#  a lógica de alteração de valores das grids
 #  (parametros)
 altura = 650 # ALTURA DA WINDOW
 largura = 900  # LARGURA DA WINDOW
@@ -22,13 +20,13 @@ clock = pygame.time.Clock()
 
 def quit_game():
     pygame.display.quit()
-# fim do método quit_game
+# end method quit_game
 
 def menu_game():
     im_menu = pygame.image.load(
         '/home/leobidoous/Documentos/UNIVERSIDADE/TECNOLOGIA E CONSTRUÇÃO DE SOFTWARE/TRAB_DISTRIBUÍDO/images/menu_batalha_naval.png')
     screen.blit(im_menu, [0, 0])
-# fim do méetodo menu_game
+# end method menu_game
 
 def menu_credits():
     im_credits = pygame.image.load(
@@ -53,7 +51,7 @@ def menu_credits():
             pygame.display.update()  # Go ahead and update the screen with what we've drawn.
         except:
             break
-# fim do méetodo menu_credits
+# end method menu_credits
 
 def start_menu_game():
     # Variável para controlar o jogo
@@ -70,8 +68,8 @@ def start_menu_game():
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     x, y = pygame.mouse.get_pos()
                     if x >= 0 and y >= 48 and x <= 180 and y <= 90:
-                        wait_players()
-                        start_game()
+                        arg0 = wait_players()
+                        start_game(arg0)
                     if x >= 0 and y >= 115 and x <= 180 and y <= 157:
                         screen.fill(config.background_color('white'))
                         menu_credits()
@@ -85,28 +83,45 @@ def start_menu_game():
             pygame.display.update() # Go ahead and update the screen with what we've drawn.
         except:
             break
-# fim do metodo start_menu_game
+# end method start_menu_game
 
 def wait_players():
     request = RequestConnectionsController()
     accept = AcceptConnectionsController()
     try:
         request.request()
+        return 'Player 2'
     except:
         try:
             accept.listen()
+            return 'Player 1'
         except socket.error as err:
             print(err)
-# fim do metodo wait_players
+# end method wait_players
 
-def start_game():
+def start_game(arg0):
     # Variável para controlar o jogo
     done = False
     while not done:
-        break
-        # clock.tick(30)  # Limit to 30 frames per second
-        # try:
-        #     pygame.display.update() # Go ahead and update the screen with what we've drawn.
-        # except:
-        #     break
-# fim do metodo start_game
+        screen.fill(config.background_color('white'))
+        for event in pygame.event.get():  # User did something
+            try:
+                if event.type == pygame.QUIT:  # If user clicked close
+                    done = True  # Flag that we are done so we exit this loop
+                    quit_game()
+                    return 0
+            except:
+                print("erro")
+
+        font = pygame.font.SysFont(None, 30)
+        text = font.render(arg0, True, config.background_color('green'))
+        pygame.draw.rect(screen, config.background_color('black'), [0, altura * 0.05, largura * (1 / 3), 27])
+        screen.blit(text, [largura/2, altura/2])
+
+        # Update screen ever 30 frames per second
+        clock.tick(30)  # Limit to 30 frames per second
+        try:
+            pygame.display.update() # Go ahead and update the screen with what we've drawn.
+        except:
+            break
+# end method start_game
