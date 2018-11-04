@@ -19,6 +19,8 @@ class ConfigInitGameModel():
         background_color['blue'] = (0, 0, 255)
         background_color['red'] = (255, 0, 0)
         background_color['green'] = (0, 255, 0)
+        background_color['yellow'] = (255, 255, 0)
+        background_color['marrom'] = (92, 51, 23)
 
         return background_color[color]
 
@@ -38,14 +40,6 @@ class ConfigInitGameModel():
 
         return grid
 
-    def draw_grid(self, width, height, margin):
-        WIDTH = width
-        HEIGHT = height
-        MARGIN = margin
-
-        return WIDTH, HEIGHT, MARGIN
-
-
 class PlayerThread(threading.Thread):
     def __init__(self, clientAddress, clientsocket):
         threading.Thread.__init__(self)
@@ -57,6 +51,14 @@ class PlayerThread(threading.Thread):
     def run(self):
         self.csocket.close()
         print("encerrando conexão", self.clientAddress)
+
+    def send_msg(self, msg):
+        self.csocket.send(msg.encode())
+
+    def recv_msg(self):
+        msg = self.csocket.recv(1028)
+        msg = msg.decode()
+        return msg
 
 class AcceptConnectionsModel(threading.Thread):
     def __init__(self):
@@ -78,6 +80,7 @@ class AcceptConnectionsModel(threading.Thread):
         _newthread.start()
         _newthread.join()
 
+
 class RequestConnectionsModel():
     def __init__(self):
         self.SERVER = "192.168.15.5"
@@ -86,6 +89,14 @@ class RequestConnectionsModel():
 
     def run(self):
         self.client.connect((self.SERVER, self.PORT))
+
+    def send_msg(self, msg):
+        self.client.sendall(msg.encode())
+
+    def recv_msg(self):
+        msg = self.client.recv(1024)
+        msg = msg.decode()
+        return msg
 
     def close(self):
         self.client.close()

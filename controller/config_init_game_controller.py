@@ -19,9 +19,6 @@ class ConfigInitGameController():
     def grid(self, rows, cols):
         return self._config.grid(rows, cols)
 
-    def draw_grid(self, width, height, margin):
-        return self._config.draw_grid(width, height, margin)
-
 class AcceptConnectionsController():
     def __init__(self):
         self._accept = AcceptConnectionsModel()
@@ -30,6 +27,7 @@ class AcceptConnectionsController():
         self._accept.daemon = True
         self._accept.start()
         self._accept.join()
+
 
 class RequestConnectionsController():
     def __init__(self):
